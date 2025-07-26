@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaChartArea, FaCog, FaShoppingCart, FaTasks } from "react-icons/fa";
+import { FaChartArea, FaCog, FaShoppingCart } from "react-icons/fa";
 import {
   SideBarContainer,
   SideBarContent,
@@ -55,9 +55,9 @@ export const SideBar = () => {
                 icon={<FaShoppingCart />}
               />
             </SideBarItem>
-            <SideBarItem onClick={() => setScreen("tasks")}>
+            {/* <SideBarItem onClick={() => setScreen("tasks")}>
               <Icon isSelected={screen === "tasks"} icon={<FaTasks />} />
-            </SideBarItem>
+            </SideBarItem> */}
           </SideBarContent>
           <SideBarItem onClick={() => setScreen("settings")}>
             <Icon isSelected={screen === "settings"} icon={<FaCog />} />
